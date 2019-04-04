@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Binary Circles 7461</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Righteous" rel="stylesheet">
+    <script src="scripts/anime.min.js"></script>
+  </head>
+  <body>
+    <div id="circleDrawing2"></div>
+    <div id="circleDrawing1"></div>
+    <div id="logoDrawing">
+      <img id="logoDrawingImage" src="images/team logo.png" />
+    </div>
+
+    <div id="contentArea">
+      <h1 id="#title">binary circles</h1>
+      <h2>frc team 7461</h2>
+      <h3>about us</h3> 
+    </div>
+
+    <script>
+      var nameMove = anime({
+        targets: '#logoDrawing',
+        scale: 1.1,
+        elasticity: 0,
+        duration: 2000,
+        easing: 'easeInOutSine',
+        direction: 'alternate',
+        loop: true
+      });
+
+      var circleMove1 = anime({
+        targets: '#circleDrawing1',
+        scale: 1.2,
+        elasticity: 0,
+        duration: 2000,
+        delay: 500,
+        easing: 'easeInOutSine',
+        direction: 'alternate',
+        loop: true
+      });
+
+      var circleMove2 = anime({
+        targets: '#circleDrawing2',
+        scale: 1.25,
+        elasticity: 0,
+        duration: 2000,
+        delay: 1000,
+        easing: 'easeInOutSine',
+        direction: 'alternate',
+        loop: true
+      });
+    </script>
+  </body>
+</html>
